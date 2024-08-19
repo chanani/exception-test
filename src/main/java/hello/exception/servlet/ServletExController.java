@@ -1,5 +1,8 @@
 package hello.exception.servlet;
 
+import jakarta.servlet.ServletRequest;
+import jakarta.servlet.ServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
@@ -10,6 +13,7 @@ import java.io.IOException;
 @Slf4j
 @Controller
 public class ServletExController {
+
 
     @GetMapping("/error-ex")
     public void errorEx() {
@@ -25,4 +29,7 @@ public class ServletExController {
     public void error500(HttpServletResponse response) throws IOException {
         response.sendError(500);
     }
+
+
+
 }
