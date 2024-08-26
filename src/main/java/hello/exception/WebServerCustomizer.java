@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 // 오류 페이지 커스컴
 
-//@Component
+@Component
 public class WebServerCustomizer implements WebServerFactoryCustomizer<ConfigurableWebServerFactory> {
 
     @Override
