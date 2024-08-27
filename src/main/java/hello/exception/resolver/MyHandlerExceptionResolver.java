@@ -12,9 +12,7 @@ import java.io.IOException;
 public class MyHandlerExceptionResolver implements HandlerExceptionResolver {
 
     @Override
-    public ModelAndView resolveException(HttpServletRequest request,
-                                         HttpServletResponse response,
-                                         Object handler, Exception ex) {
+    public ModelAndView resolveException(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) {
         try {
             if (ex instanceof IllegalAccessException) {
                 log.info("IllegalAccessException resolver to 400");
